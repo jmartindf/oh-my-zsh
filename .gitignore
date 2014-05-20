@@ -8,3 +8,8 @@ projects.zsh
 # temp files directories
 cache/
 log/
+
+# my add-ins
+locals.zsh
+projects.zsh
+*.swp
