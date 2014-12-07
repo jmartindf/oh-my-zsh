@@ -14,12 +14,12 @@ jump() {
 
 mark() {
 	if (( $# == 0 )); then
-		MARK=$(basename "$(pwd)")
+		MARK=$(basename "$PWD")
 	else
 		MARK="$1"
 	fi
-	if read -q \?"Mark $(pwd) as ${MARK}? (y/n) "; then
-		mkdir -p "$MARKPATH"; ln -s "$(pwd)" "$MARKPATH/$MARK"
+	if read -q \?"Mark $PWD as ${MARK}? (y/n) "; then
+		mkdir -p "$MARKPATH"; ln -s "$PWD" "$MARKPATH/$MARK"
 	fi
 }
 
@@ -38,7 +38,13 @@ marks() {
 }
 
 _completemarks() {
-	reply=($(ls $MARKPATH/**/*(-) | grep : | sed -E 's/(.*)\/([_\da-zA-Z\-]*):$/\2/g'))
+	if [[ $(ls "${MARKPATH}" | wc -l) -gt 1 ]]; then
+		reply=($(ls $MARKPATH/**/*(-) | grep : | sed -E 's/(.*)\/([_a-zA-Z0-9\.\-]*):$/\2/g'))
+	else
+		if readlink -e "${MARKPATH}"/* &>/dev/null; then
+			reply=($(ls "${MARKPATH}"))
+		fi
+	fi
 }
 compctl -K _completemarks jump
 compctl -K _completemarks unmark
