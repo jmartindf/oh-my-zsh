@@ -1,11 +1,10 @@
 locals.zsh
-log/.zsh_history
 projects.zsh
 #custom
 #!custom/plugins/example
 #!custom/example.zsh
 *.swp
+
+# temp files directories
 cache/
-!cache/.gitkeep
 log/
-!log/.gitkeep
