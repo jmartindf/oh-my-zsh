@@ -1,10 +1,14 @@
 # Ember CLI
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Maintainers:** [BilalBudhani](http://www.github.com/BilalBudhani), [eubenesa](http://www.github.com/eubenesa)
 =======
 **Maintainer:*[BilalBudhani](http://www.github.com/BilalBudhani)
 >>>>>>> Nicer formatting
+=======
+**Maintainer:**[BilalBudhani](http://www.github.com/BilalBudhani)
+>>>>>>> Fix maintainer line
 
 Ember CLI (http://www.ember-cli.com/)
 
