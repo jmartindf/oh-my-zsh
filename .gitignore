@@ -6,3 +6,6 @@ projects.zsh
 #!custom/example.zsh
 *.swp
 cache/
+!cache/.gitkeep
+log/
+!log/.gitkeep
