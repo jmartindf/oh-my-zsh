@@ -2,6 +2,7 @@
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Maintainers:** [BilalBudhani](http://www.github.com/BilalBudhani), [eubenesa](http://www.github.com/eubenesa)
 =======
 **Maintainer:*[BilalBudhani](http://www.github.com/BilalBudhani)
@@ -9,8 +10,11 @@
 =======
 **Maintainer:**[BilalBudhani](http://www.github.com/BilalBudhani)
 >>>>>>> Fix maintainer line
+=======
+**Maintainers:** [BilalBudhani](https://github.com/BilalBudhani), [eubenesa](https://github.com/eubenesa)
+>>>>>>> use https everywhere (#6574)
 
-Ember CLI (http://www.ember-cli.com/)
+Ember CLI (https://www.ember-cli.com/)
 
 ### List of Aliases
 
