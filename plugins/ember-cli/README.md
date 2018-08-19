@@ -3,6 +3,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Maintainers:** [BilalBudhani](http://www.github.com/BilalBudhani), [eubenesa](http://www.github.com/eubenesa)
 =======
 **Maintainer:*[BilalBudhani](http://www.github.com/BilalBudhani)
@@ -13,6 +14,9 @@
 =======
 **Maintainers:** [BilalBudhani](https://github.com/BilalBudhani), [eubenesa](https://github.com/eubenesa)
 >>>>>>> use https everywhere (#6574)
+=======
+**Maintainers:** [BilalBudhani](https://github.com/BilalBudhani), [eubenesa](https://github.com/eubenesa), [scottkidder](https://github.com/scottkidder]
+>>>>>>> ember-cli : Add alias for ember test --serve (#6492)
 
 Ember CLI (https://www.ember-cli.com/)
 
@@ -45,6 +49,7 @@ Alias | Ember-CLI command
 **ein** | *ember install:npm*
 **ei** | *ember install*
 **et** | *ember test*
+**ets** | *ember test --serve*
 **eu** | *ember update*
 **ev** | *ember version*
 >>>>>>> Nicer formatting
