@@ -155,9 +155,7 @@ compdef _git ggu=git-checkout
 alias ggpur='ggu'
 compdef _git ggpur=git-checkout
 
-<<<<<<< HEAD
 alias gh='git help'
-=======
 alias ggpull='git pull origin $(git_current_branch)'
 compdef _git ggpull=git-checkout
 
@@ -165,13 +163,8 @@ alias ggpush='git push origin $(git_current_branch)'
 compdef _git ggpush=git-checkout
 
 alias ggsup='git branch --set-upstream-to=origin/$(git_current_branch)'
->>>>>>> [git plugin] Fix indentation and organise aliases
-
-<<<<<<< HEAD
 alias gpsup='git push --set-upstream origin $(git_current_branch)'
-=======
 alias ghh='git help'
->>>>>>> Rename `gh` alias (git help) to `ghh`
 
 alias gignore='git update-index --assume-unchanged'
 alias gignored='git ls-files -v | grep "^[[:lower:]]"'
