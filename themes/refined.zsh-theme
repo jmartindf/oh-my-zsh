@@ -1,29 +1,13 @@
-#!/usr/bin/env zsh
+print -P '%F{yellow}'Oh My Zsh pure theme:
+cat <<-EOF
 
-# ------------------------------------------------------------------------------
-#
-# Pure - A minimal and beautiful theme for oh-my-zsh
-#
-# Based on the custom Zsh-prompt of the same name by Sindre Sorhus. A huge
-# thanks goes out to him for designing the fantastic Pure prompt in the first
-# place! I'd also like to thank Julien Nicoulaud for his "nicoulaj" theme from
-# which I've borrowed both some ideas and some actual code. You can find out
-# more about both of these fantastic two people here:
-#
-# Sindre Sorhus
-#   Github:   https://github.com/sindresorhus
-#   Twitter:  https://twitter.com/sindresorhus
-#
-# Julien Nicoulaud
-#   Github:   https://github.com/nicoulaj
-#   Twitter:  https://twitter.com/nicoulaj
-#
-# ------------------------------------------------------------------------------
+	  The pure theme has been renamed as 'refined' as per the original author's
+	  request. Change your ZSH_THEME to 'refined' to avoid seeing this warning.
 
-# Set required options
-#
-setopt prompt_subst
+EOF
+print -P '%f'
 
+<<<<<<<< HEAD:themes/refined.zsh-theme
 # Load required modules
 #
 autoload -Uz vcs_info
@@ -72,6 +56,7 @@ preexec() {
 precmd() {
     vcs_info # Get version control info before we start outputting stuff
     print -P "\n$(repo_information) %F{yellow}$(cmd_exec_time)%f"
+    unset cmd_timestamp #Reset cmd exec time.
 }
 
 # Define prompts
@@ -104,3 +89,6 @@ RPROMPT="%F{8}${SSH_TTY:+%n@%m}%f"    # Display username if connected via SSH
 # %(?..) => prompt conditional - %(condition.true.false)
 #
 # ------------------------------------------------------------------------------
+========
+source ${0:h:A}/refined.zsh-theme
+>>>>>>>> 708ea42384d378343a590fc34a3dee536a1651df:themes/pure.zsh-theme
