@@ -1,0 +1,2 @@
+export PATH=$PATH:/home/jmartin/swift/swift-5.1.5-RELEASE-ubuntu18.04/usr/bin
+function fixlibrary() { sed -i -f /home/jmartin/stories/fixquotes.sed "${1}".html && iconv -t utf-8 -f iso-8859-1 "${1}".html | pandoc -o "${1}".md --read html && /home/jmartin/stories/fixlibrary.py "${1}".md }
