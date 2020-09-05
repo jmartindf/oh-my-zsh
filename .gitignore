@@ -12,3 +12,4 @@ log/
 locals.zsh
 projects.zsh
 *.swp
+.DS_Store
